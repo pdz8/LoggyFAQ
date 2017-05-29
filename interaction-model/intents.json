@@ -1,0 +1,13 @@
+{
+    "intents": [
+        {
+            "intent": "GetAge"
+        },
+        {
+            "intent": "GetNickname"
+        },
+        {
+            "intent": "GetBreed"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+GetAge age
+GetAge how old are you
+GetAge how old
+GetAge what is your age
+
+GetNickname name
+GetNickname what is your name
+GetNickname what is your nickname
+GetNickname what do people call you
+
+GetBreed breed
+GetBreed what type of dog are you
+GetBreed what breed are you
+GetBreed what breed

@@ -22,14 +22,15 @@ const handlers = {
         const birthday = new Date(2010, 11, 22);
         const today = new Date();
         let age = today.getFullYear() - birthday.getFullYear();
-        if (today.getMonth() <= birthday.getMonth() && today.getDate() < birthday.getDate()) {
+        if (today.getMonth() < birthday.getMonth()
+            || (today.getMonth() === birthday.getMonth() && today.getDate() < birthday.getDate())) {
             age--;
         }
         this.emit(':tell', age + ' years old');
     },
 
     'GetNickname': function () {
-        const randomNickname = NICKNAMES[Math.floor(Math.random * NICKNAMES.length)];
+        const randomNickname = NICKNAMES[Math.floor(Math.random() * NICKNAMES.length)];
         this.emit(':tell', randomNickname);
     },
 

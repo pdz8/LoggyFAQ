@@ -5,8 +5,9 @@
 const Alexa = require('alexa-sdk');
 
 const SKILL_NAME = 'Loggy FAQ';
-const HELP_MESSAGE = 'Ask me my age, name, or breed.';
+const HELP_MESSAGE = 'You can ask my age, name, or breed.';
 const STOP_MESSAGE = 'Goodbye!';
+const WELCOME_MESSAGE = 'Welcome to Loggy F.A.Q.. Ask me a question.';
 
 const NICKNAMES = [
     'Bo-Log-Nah',
@@ -17,6 +18,10 @@ const NICKNAMES = [
 ];
 
 const handlers = {
+
+    'LaunchRequest': function () {
+        this.emit(':ask', WELCOME_MESSAGE, HELP_MESSAGE);
+    },
 
     'GetAge': function () {
         const birthday = new Date(2010, 11, 22);

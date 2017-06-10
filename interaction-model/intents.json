@@ -13,6 +13,18 @@
             "intent": "GetBreed"
         },
         {
+            "intent": "GetGoodDoggy",
+            "slots": [
+                {
+                    "name": "Doggy",
+                    "type": "DOGGY"
+                }
+            ]
+        },
+        {
+            "intent": "GetWeather"
+        },
+        {
             "intent": "AMAZON.HelpIntent"
         },
         {

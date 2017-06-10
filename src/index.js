@@ -43,6 +43,15 @@ const handlers = {
         this.emit(':tell', 'half Great Dane and half Bull Terrier');
     },
 
+    'GetGoodDoggy': function () {
+        const doggy = this.event.request.intent.slots.Doggy.value ? this.event.request.intent.slots.Doggy.value : 'doggy';
+        this.emit(':tell', 'Loggy is a good ' + doggy);
+    },
+
+    'GetWeather': function () {
+        this.emit(':tell', "It's perfect weather for a walk!");
+    },
+
     'AMAZON.HelpIntent': function () {
         this.emit(':ask', HELP_MESSAGE, HELP_MESSAGE);
     },

@@ -12,3 +12,14 @@ GetBreed breed
 GetBreed what type of dog are you
 GetBreed what breed are you
 GetBreed what breed
+
+GetGoodDoggy who is a good {Doggy}
+GetGoodDoggy who's a good {Doggy}
+
+GetWeather what is the weather
+GetWeather what is the temperature
+GetWeather weather
+GetWeather what is is like outside
+GetWeather is it raining
+GetWeather temperature
+GetWeather is it good weather for a walk
